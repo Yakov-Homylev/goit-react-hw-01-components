@@ -1,4 +1,5 @@
 import s from "./Statistics.module.css";
+import PropTypes from "prop-types";
 
 function Statistics({ title, stats }) {
   return (
@@ -23,5 +24,10 @@ function Statistics({ title, stats }) {
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
+
+Statistics.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.array,
+};
 
 export default Statistics;
