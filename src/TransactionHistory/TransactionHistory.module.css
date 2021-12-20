@@ -1,0 +1,14 @@
+.table {
+  width: 600px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+.head {
+  background-color: skyblue;
+}
+.row {
+  background-color: #ccc;
+}
+.row:nth-child(2n) {
+  background-color: #fff;
+}
